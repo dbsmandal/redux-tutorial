@@ -1,14 +1,11 @@
 import React from 'react'
 import cardImage from '../Image/Apple.jpg'
-import cartImage2 from "../Image/cart.jpg"
 
-export default function Home() {
+export default function Home(props) {
+  console.warn("Home",props)
   return (
     <div>
       <h1>Home Page</h1>
-      <div className="Add-to-cart">
-        <img src={cartImage2}alt="Add To Cart" />
-      </div>
       <div className="card-wrapper">
         <div className="image-wrapper">
             <img src={cardImage} alt="iPhone 13" />
@@ -23,7 +20,9 @@ export default function Home() {
             <span>Description:A lightning-fast chip. A leap in battery life. And all-new photo and video capabilities. iPhone 13 lets you do things you never could before — in two great sizes.</span>
         </div>
         <div className="button-wrapper">
-            <button>ADD TO CART</button>
+            <button
+            onClick={()=>props.addToCartHandeler({Title:"iPhone 13",Price:"$1200"})}
+            >ADD TO CART</button>
         </div>
       </div>
     </div>
