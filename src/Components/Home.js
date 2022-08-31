@@ -1,10 +1,14 @@
 import React from 'react'
 import cardImage from '../Image/Apple.jpg'
+import cartImage2 from "../Image/cart.jpg"
 
 export default function Home() {
   return (
     <div>
       <h1>Home Page</h1>
+      <div className="Add-to-cart">
+        <img src={cartImage2}alt="Add To Cart" />
+      </div>
       <div className="card-wrapper">
         <div className="image-wrapper">
             <img src={cardImage} alt="iPhone 13" />
