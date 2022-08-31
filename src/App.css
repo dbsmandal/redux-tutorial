@@ -24,6 +24,58 @@
   color: white;
 }
 
+
+.card-wrapper {
+  height: 150px;
+  width: 600px;
+  border: 3px solid #ccc;
+  margin-left: 10%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+}
+.image-wrapper{
+  height: 135px;
+  width: 200px;
+  text-align: center;
+  margin: 5px;
+  /* background-color: red; */
+
+}
+.image-wrapper img{
+  height: 125px;
+  width: 125px;
+}
+.text-wrapper{
+    height: 135px;
+    width: auto;
+    margin-top: 8px;
+    margin-right: -100px;
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+}
+.button-wrapper{
+  background-color: bisque;
+  height: 55px;
+  width: 60px;
+  margin-top: 15px;
+  margin-left: 110px;
+  margin-right: 10px;
+  box-shadow: bisque 5px 10px 10px;
+  border-radius: 5px solid bisque;
+  display: inline;
+
+}.button-wrapper button{
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text-wrapper span{
+  text-align: justify;
+  font-family: cursive;
+}
+
 .App-link {
   color: #61dafb;
 }
